@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hussien Talha</title>
+    <link href="./assets/css/main.css" rel="stylesheet"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 24px;
+        }
+        header {
+            background-color: #f8f9fa;
+            text-align: center;
+            font-size: 24px;
+        }
+        main {
+            margin: 15px;
+            line-height: 1.6;
+            text-align: center;
+            font-size: 24px;
+            color: black;
+        }
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+             text-align: center;
+            font-size: 24px;
+            font-weight: 700; /* This will make the text bold */
+}
+
+        .section {
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        .section1 {
+            background-color: white; /* Replace with your image 
+file */
+        }
+        .section2 {
+            background-color: blue; /* Replace with your image file */
+color: white;
+        }
+        .section3 {
+            background-color: rgb(0, 0, 0); /* Replace with your image file */
+        }
+        footer{
+        background-color: #666666; 
+        color: rgb(255, 255, 255);
+        text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        .bn5 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.bn5:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn5:active {
+  color: #000;
+}
+
+.bn5:active:after {
+  background: transparent;
+}
+
+.bn5:hover:before {
+  opacity: 1;
+}
+
+.bn5:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #191919;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <nav class="topnav navbar navbar-expand-lg navbar-light bg-w	hite fixed-top">
+        <div class="container">
+            <a class="navbar-brand"><strong>Hussien Talha</strong></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarColor02" style="">
+                <ul class="navbar-nav mr-auto d-flex align-items-center">
+                    <li class="nav-item">
+                </ul>
+                <ul class="navbar-nav ml-auto d-flex align-items-center">
+                    <li class="nav-item highlight">
+                    <a class="nav-link" href="https://hussien-talha.github.io/Website/">About me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+    <main>
+
+        <div class="section section2">
+            <h2>Ya sehs</h2>
+            <p>Enta 3amalt el website dah lel library.</p>
+            <p>Click 3al button below 3alashan tenazel, el personal website beta3ack we vs code.</p>
+        </div>
+        <div class="section section3">
+            <a href="/assets/library/vscode.zip" class="bn5"download>Download</a>
+        </div>
+    </main>
+    <footer>Created by Hussien Talha © 2023</footer>
+</body>
+</html>
